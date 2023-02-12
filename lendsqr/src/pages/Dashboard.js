@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { NonAuthRoutes } from "../url";
+import { NonAuthRoutes } from "../helperFiles/url";
 import lendsqrLogo from "../assets/svg/lendsqr-logo.svg";
 import searchIcon from "../assets/svg/search-icon.svg";
 import notificationIcon from "../assets/svg/notification-icon.svg";
@@ -9,7 +9,10 @@ import dropDownIcon from "../assets/svg/drop-down-icon.svg";
 import briefcaseIcon from "../assets/svg/briefcase-icon.svg";
 import arrowDropDown from "../assets/svg/arrow-drop-down.svg";
 import homeIcon from "../assets/svg/home-icon.svg";
-import profileAvater from "../assets/svg/profile-averta-icon.svg";
+import profileAvater from "../assets/svg/profile-avater-icon2.svg";
+import profileAvater3 from "../assets/svg/profile-avater-icon3.svg";
+import avaterLoan from "../assets/svg/avater-loan.svg";
+import avaterSavins from "../assets/svg/avater-savings.svg";
 import networkIcon from "../assets/svg/network-icon.svg";
 import optionsIcon from "../assets/svg/options-icon.svg";
 import nextArrow from "../assets/svg/next-arrow.svg";
@@ -20,8 +23,8 @@ function Dashboard() {
   const navigate = useNavigate();
 
   return (
-    <div className="w-[100%] h-[900px] bg-[] text-center flex flex-col justify-center items-center ">
-      <div className="w-[100%] h-[10%] flex justify-center items-center bg-[#ffffff] ">
+    <div className="w-[100%] h-[1000px] bg-[] text-center flex flex-col justify-center items-center ">
+      <div className="w-[100%] h-[8%] flex justify-center items-center bg-[#ffffff] ">
         <div className="w-[20%] h-[100%] flex flex-col justify-center items-start ">
           <img
             onClick={() => navigate(NonAuthRoutes.login)}
@@ -66,9 +69,9 @@ function Dashboard() {
           </div>
         </div>
       </div>
-      <div className="w-[100%] h-[90%] flex justify-center items-center ">
+      <div className="w-[100%] h-[92%] flex justify-center items-center ">
         <div className="w-[20%] h-[100%] flex flex-col justify-center items-start ">
-          <div className="w-[100%] h-[55%] bg-[#ffffff] ml-[20px] ">
+          <div className="w-[100%] h-[45%] bg-[#ffffff] ml-[20px] ">
             <div className="flex justify-start items-center py-[20px] ">
               <img className="w-[16px] h-[7px] " src={briefcaseIcon} alt="" />
               <p className="text-[#213F7D] text-[16px] font-[400] mx-[6px] ">
@@ -86,170 +89,205 @@ function Dashboard() {
                 Dashboard
               </p>
             </div>
-            <div className="flex flex-col justify-center items-start pt-[10px] ">
-              <p className="text-[18px] pb-[5px] ">CUSTOMERS</p>
-              <div className="w-[38%] flex justify-between items-center py-[5px] ">
+            <div className="flex flex-col justify-center items-start pt-[10px] text-[16px] ">
+              <p className=" pb-[5px] font-[600] ">CUSTOMERS</p>
+              <div className="w-[38%] flex justify-start items-center py-[5px] ">
                 <img
                   className="w-[11px] h-[9px] text-[#213F7D] "
-                  src={homeIcon}
+                  src={profileAvater3}
                   alt=""
                 />
-                <p className="text-[#213F7D] text-[16px] font-[400] ">
-                  Dashboard
+                <p className="text-[#213F7D] text-[13px] font-[400] ml-[7px] ">
+                  Users
                 </p>
               </div>
-              <div className="w-[38%] flex justify-between items-center py-[5px] ">
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
                 <img
                   className="w-[11px] h-[9px] text-[#213F7D] "
-                  src={homeIcon}
+                  src={avaterLoan}
                   alt=""
                 />
-                <p className="text-[#213F7D] text-[16px] font-[400] ">
-                  Dashboard
+                <p className="text-[#213F7D] text-[13px] font-[400] ml-[7px] ">
+                  Guarantors
                 </p>
               </div>
-              <div className="w-[38%] flex justify-between items-center py-[5px] ">
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
                 <img
                   className="w-[11px] h-[9px] text-[#213F7D] "
                   src={homeIcon}
                   alt=""
                 />
-                <p className="text-[#213F7D] text-[16px] font-[400] ">
-                  Dashboard
+                <p className="text-[#213F7D] text-[13px] font-[400] ml-[7px] ">
+                  Loans
                 </p>
               </div>
-              <div className="w-[38%] flex justify-between items-center py-[5px] ">
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
                 <img
                   className="w-[11px] h-[9px] text-[#213F7D] "
-                  src={homeIcon}
+                  src={profileAvater}
                   alt=""
                 />
-                <p className="text-[#213F7D] text-[16px] font-[400] ">
-                  Dashboard
+                <p className="text-[#213F7D] text-[13px] font-[400] ml-[7px] ">
+                  Decision Models
                 </p>
               </div>
-              <div className="w-[38%] flex justify-between items-center py-[5px] ">
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
                 <img
                   className="w-[11px] h-[9px] text-[#213F7D] "
                   src={homeIcon}
                   alt=""
                 />
-                <p className="text-[#213F7D] text-[16px] font-[400] ">
-                  Dashboard
+                <p className="text-[#213F7D] text-[16px] font-[400] ml-[7px] ">
+                  Savings
                 </p>
               </div>
-              <div className="w-[38%] flex justify-between items-center py-[5px] ">
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
                 <img
                   className="w-[11px] h-[9px] text-[#213F7D] "
-                  src={homeIcon}
+                  src={profileAvater3}
                   alt=""
                 />
-                <p className="text-[#213F7D] text-[16px] font-[400] ">
-                  Dashboard
+                <p className="text-[#213F7D] text-[16px] font-[400] ml-[7px] ">
+                  Loan Requests
                 </p>
               </div>
-              <div className="w-[38%] flex justify-between items-center py-[5px] ">
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
                 <img
                   className="w-[11px] h-[9px] text-[#213F7D] "
-                  src={homeIcon}
+                  src={avaterLoan}
                   alt=""
                 />
-                <p className="text-[#213F7D] text-[16px] font-[400] ">
-                  Dashboard
+                <p className="text-[#213F7D] text-[16px] font-[400] ml-[7px] ">
+                  Whitelist
                 </p>
               </div>
-              <div className="w-[38%] flex justify-between items-center py-[5px] ">
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
                 <img
                   className="w-[11px] h-[9px] text-[#213F7D] "
-                  src={homeIcon}
+                  src={profileAvater}
                   alt=""
                 />
-                <p className="text-[#213F7D] text-[16px] font-[400] ">
-                  Dashboard
+                <p className="text-[#213F7D] text-[16px] font-[400] ml-[7px] ">
+                  Karma
                 </p>
               </div>
             </div>
           </div>
-          <div className="w-[100%] h-[45%] bg-[#ffffff] ml-[20px] ">
+          <div className="w-[100%] h-[35%] bg-[#ffffff] ml-[20px] ">
             <div className="flex flex-col justify-center items-start pt-[10px] ">
-              <p className="text-[18px] pb-[5px] ">CUSTOMERS</p>
-              <div className="w-[38%] flex justify-between items-center py-[5px] ">
+              <p className="text-[16px] pb-[5px] font-[600] ">BUSINESSES</p>
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
                 <img
                   className="w-[11px] h-[9px] text-[#213F7D] "
                   src={homeIcon}
                   alt=""
                 />
-                <p className="text-[#213F7D] text-[16px] font-[400] ">
+                <p className="text-[#213F7D] text-[16px] font-[400] ml-[7px] ">
+                  Organizations
+                </p>
+              </div>
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
+                <img
+                  className="w-[11px] h-[9px] text-[#213F7D] "
+                  src={briefcaseIcon}
+                  alt=""
+                />
+                <p className="text-[#213F7D] text-[13px] font-[400] ml-[7px] ">
+                  Loan Products
+                </p>
+              </div>
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
+                <img
+                  className="w-[11px] h-[9px] text-[#213F7D] "
+                  src={profileAvater}
+                  alt=""
+                />
+                <p className="text-[#213F7D] text-[13px] font-[400] ml-[7px] ">
                   Dashboard
                 </p>
               </div>
-              <div className="w-[38%] flex justify-between items-center py-[5px] ">
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
                 <img
                   className="w-[11px] h-[9px] text-[#213F7D] "
                   src={homeIcon}
                   alt=""
                 />
-                <p className="text-[#213F7D] text-[16px] font-[400] ">
-                  Dashboard
+                <p className="text-[#213F7D] text-[13px] font-[400] ml-[7px] ">
+                  Savings products
                 </p>
               </div>
-              <div className="w-[38%] flex justify-between items-center py-[5px] ">
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
                 <img
                   className="w-[11px] h-[9px] text-[#213F7D] "
-                  src={homeIcon}
+                  src={avaterSavins}
                   alt=""
                 />
-                <p className="text-[#213F7D] text-[16px] font-[400] ">
-                  Dashboard
+                <p className="text-[#213F7D] text-[13px] font-[400] ml-[7px] ">
+                  Fees and Charges
                 </p>
               </div>
-              <div className="w-[38%] flex justify-between items-center py-[5px] ">
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
                 <img
                   className="w-[11px] h-[9px] text-[#213F7D] "
                   src={homeIcon}
                   alt=""
                 />
-                <p className="text-[#213F7D] text-[16px] font-[400] ">
-                  Dashboard
+                <p className="text-[#213F7D] text-[13px] font-[400] ml-[7px] ">
+                  Transactions
                 </p>
               </div>
-              <div className="w-[38%] flex justify-between items-center py-[5px] ">
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
                 <img
                   className="w-[11px] h-[9px] text-[#213F7D] "
-                  src={homeIcon}
+                  src={avaterLoan}
                   alt=""
                 />
-                <p className="text-[#213F7D] text-[16px] font-[400] ">
-                  Dashboard
+                <p className="text-[#213F7D] text-[13px] font-[400] ml-[7px] ">
+                  Services
                 </p>
               </div>
-              <div className="w-[38%] flex justify-between items-center py-[5px] ">
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
                 <img
                   className="w-[11px] h-[9px] text-[#213F7D] "
                   src={homeIcon}
                   alt=""
                 />
-                <p className="text-[#213F7D] text-[16px] font-[400] ">
-                  Dashboard
+                <p className="text-[#213F7D] text-[13px] font-[400] ml-[7px] ">
+                  Service Account
                 </p>
               </div>
-              <div className="w-[38%] flex justify-between items-center py-[5px] ">
+            </div>
+          </div>
+          <div className="w-[100%] h-[20%] bg-[#ffffff] ml-[20px] ">
+            <div className="flex flex-col justify-center items-start pt-[10px] ">
+              <p className="text-[16px] pb-[5px] font-[600] ">SETTINGS</p>
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
                 <img
                   className="w-[11px] h-[9px] text-[#213F7D] "
                   src={homeIcon}
                   alt=""
                 />
-                <p className="text-[#213F7D] text-[16px] font-[400] ">
-                  Dashboard
+                <p className="text-[#213F7D] text-[16px] font-[400] ml-[7px] ">
+                  Organizations
                 </p>
               </div>
-              <div className="w-[38%] flex justify-between items-center py-[5px] ">
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
                 <img
                   className="w-[11px] h-[9px] text-[#213F7D] "
-                  src={homeIcon}
+                  src={avaterSavins}
                   alt=""
                 />
-                <p className="text-[#213F7D] text-[16px] font-[400] ">
+                <p className="text-[#213F7D] text-[16px] font-[400] ml-[7px] ">
+                  Loan Products
+                </p>
+              </div>
+              <div className="w-[100%] flex justify-start items-center py-[5px] ">
+                <img
+                  className="w-[11px] h-[9px] text-[#213F7D] "
+                  src={avaterLoan}
+                  alt=""
+                />
+                <p className="text-[#213F7D] text-[16px] font-[400] ml-[7px] ">
                   Dashboard
                 </p>
               </div>
@@ -269,7 +307,7 @@ function Dashboard() {
                 <div className="w-[240px] h-[130px] bg-[#ffffff] m-[5px] flex flex-col  justify-center items-center  ">
                   <div className="w-[80%] h-[80%] flex flex-col  justify-around items-start ">
                     <img
-                      className="w-[14px] h-[14px] "
+                      className="w-[35px] h-[35px] "
                       src={profileAvater}
                       alt=""
                     />
@@ -284,8 +322,8 @@ function Dashboard() {
                 <div className="w-[240px] h-[130px] bg-[#ffffff] m-[5px] flex flex-col  justify-center items-center  ">
                   <div className="w-[80%] h-[80%] flex flex-col  justify-around items-start ">
                     <img
-                      className="w-[14px] h-[14px] "
-                      src={profileAvater}
+                      className="w-[21px] h-[18px] "
+                      src={profileAvater3}
                       alt=""
                     />
                     <p className="text-[12px] text-[#545F7D] font-[500] ">
@@ -299,8 +337,8 @@ function Dashboard() {
                 <div className="w-[240px] h-[130px] bg-[#ffffff] m-[5px] flex flex-col  justify-center items-center  ">
                   <div className="w-[80%] h-[80%] flex flex-col  justify-around items-start ">
                     <img
-                      className="w-[14px] h-[14px] "
-                      src={profileAvater}
+                      className="w-[16px] h-[19px] "
+                      src={avaterLoan}
                       alt=""
                     />
                     <p className="text-[12px] text-[#545F7D] font-[500] ">
@@ -314,8 +352,8 @@ function Dashboard() {
                 <div className="w-[240px] h-[130px] bg-[#ffffff] m-[5px] flex flex-col  justify-center items-center  ">
                   <div className="w-[80%] h-[80%] flex flex-col  justify-around items-start ">
                     <img
-                      className="w-[14px] h-[14px] "
-                      src={profileAvater}
+                      className="w-[15px] h-[18px] "
+                      src={avaterSavins}
                       alt=""
                     />
                     <p className="text-[12px] text-[#545F7D] font-[500] ">
@@ -369,7 +407,7 @@ function Dashboard() {
                 <p>adedeji@lendsqr.com</p>
                 <p>08078903721</p>
                 <p>May 15, 2020 10:00 AM</p>
-                <button className="w-[65px] h-[20px] text-[12px] bg-[#545F7D] rounded-[100px] ">
+                <button className="w-[65px] h-[20px] text-[12px] bg-[#2bfd35] rounded-[100px] ">
                   Inactive
                 </button>
                 <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />
@@ -380,7 +418,7 @@ function Dashboard() {
                 <p>adedeji@lendsqr.com</p>
                 <p>08078903721</p>
                 <p>May 15, 2020 10:00 AM</p>
-                <button className="w-[65px] h-[20px] text-[12px] bg-[#545F7D] rounded-[100px] ">
+                <button className="w-[65px] h-[20px] text-[12px] bg-[#dfe5f5] rounded-[100px] ">
                   Inactive
                 </button>
                 <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />
@@ -413,7 +451,7 @@ function Dashboard() {
                 <p>adedeji@lendsqr.com</p>
                 <p>08078903721</p>
                 <p>May 15, 2020 10:00 AM</p>
-                <button className="w-[65px] h-[20px] text-[12px] bg-[#545F7D] rounded-[100px] ">
+                <button className="w-[65px] h-[20px] text-[12px] bg-[#ff6095] rounded-[100px] ">
                   Inactive
                 </button>
                 <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />
@@ -424,7 +462,7 @@ function Dashboard() {
                 <p>adedeji@lendsqr.com</p>
                 <p>08078903721</p>
                 <p>May 15, 2020 10:00 AM</p>
-                <button className="w-[65px] h-[20px] text-[12px] bg-[#545F7D] rounded-[100px] ">
+                <button className="w-[65px] h-[20px] text-[12px] bg-[#fa1b1b] rounded-[100px] ">
                   Inactive
                 </button>
                 <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />
@@ -435,7 +473,7 @@ function Dashboard() {
                 <p>adedeji@lendsqr.com</p>
                 <p>08078903721</p>
                 <p>May 15, 2020 10:00 AM</p>
-                <button className="w-[65px] h-[20px] text-[12px] bg-[#545F7D] rounded-[100px] ">
+                <button className="w-[65px] h-[20px] text-[12px] bg-[#fdd72f] rounded-[100px] ">
                   Inactive
                 </button>
                 <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />
@@ -446,7 +484,7 @@ function Dashboard() {
                 <p>adedeji@lendsqr.com</p>
                 <p>08078903721</p>
                 <p>May 15, 2020 10:00 AM</p>
-                <button className="w-[65px] h-[20px] text-[12px] bg-[#545F7D] rounded-[100px] ">
+                <button className="w-[65px] h-[20px] text-[12px] bg-[#71d1fd] rounded-[100px] ">
                   Inactive
                 </button>
                 <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />
@@ -457,7 +495,7 @@ function Dashboard() {
                 <p>adedeji@lendsqr.com</p>
                 <p>08078903721</p>
                 <p>May 15, 2020 10:00 AM</p>
-                <button className="w-[65px] h-[20px] text-[12px] bg-[#545F7D] rounded-[100px] ">
+                <button className="w-[65px] h-[20px] text-[12px] bg-[#1afc5e] rounded-[100px] ">
                   Inactive
                 </button>
                 <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />

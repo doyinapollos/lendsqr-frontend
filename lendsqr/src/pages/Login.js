@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { AuthRoutes } from "../url";
+import { AuthRoutes } from "../helperFiles/url";
 import lendsqrLogo from "../assets/svg/lendsqr-logo.svg";
 import avaterImage from "../assets/svg/avater-image.svg";
 
