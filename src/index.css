@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	margin: 0;
+	background-color: #fcfcfc;
+	font-family: "AvenirNextRegular";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* 
+Font Weight	Numerical Weight
+"Thin", "Hairline"	100
+"Extra Light", "Ultra Light"	200
+"Light", "Book"	300
+"Normal", "Regular", "Roman", "Standard", "Plain"	400/Normal
+"Medium", "Demi"	500
+"Semi Bold", "Semi Bld", "Demi Bold", "Demi Bld"	600
+"Bold", "Bld"	700/Bold
+"Extra Bold", "Ultra Bold", "Extra Bld", "Ultra Bld"	800
+"Black", "Heavy", "Ultra", "Fat", "Poster", "Ultra Black" 	 900 
+*/
+
+@layer base {
+	@font-face {
+		font-family: "AvenirNextBold";
+		font-weight: 700;
+		src: local("AvenirNextBold"),
+			url(./assets/fonts/Avenir-Next-Bold.otf) format("opentype");
+	}
+	@font-face {
+		font-family: "AvenirNextLight";
+		font-weight: 300;
+		src: local("AvenirNextLight"),
+			url(./assets/fonts/Avenir-Next-Light.otf) format("opentype");
+	}
+	@font-face {
+		font-family: "AvenirNextRegular";
+		font-weight: 400;
+		src: local("AvenirNextRegular"),
+			url(./assets/fonts/Avenir-Next-Regular.otf) format("opentype");
+	}
+}
