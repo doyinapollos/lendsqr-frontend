@@ -1,11 +1,12 @@
+/* eslint-disable prettier/prettier */
 /** Authenticated URL Routes */
 const AuthRoutes = {
-    dashboard: "/dashboard",
+  dashboard: '/dashboard',
 };
 
 /** Non Authenticated URL Routes */
 const NonAuthRoutes = {
-    login: "/",
+  login: '/',
 };
 
 export { AuthRoutes, NonAuthRoutes };

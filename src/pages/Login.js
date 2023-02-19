@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import { Oval } from "react-loader-spinner";
-import { useNavigate } from "react-router-dom";
-import { AuthRoutes } from "../helpers/url";
-import lendsqrLogo from "../assets/svg/lendsqr-logo.svg";
-import avaterImage from "../assets/svg/avater-image.svg";
-import Buttons from "../components/buttons";
+/* eslint-disable prettier/prettier */
+import React, { useState } from 'react';
+import { Oval } from 'react-loader-spinner';
+import { useNavigate } from 'react-router-dom';
+import { AuthRoutes } from '../helpers/url';
+import lendsqrLogo from '../assets/svg/lendsqr-logo.svg';
+import avaterImage from '../assets/svg/avater-image.svg';
+import Buttons from '../components/buttons';
 
 function Login() {
   const navigate = useNavigate();
@@ -23,24 +24,24 @@ function Login() {
         <div className="w-[100%] h-[20%] flex flex-col justify-center items-center ">
           <div className="w-[90%] h-[120px] flex flex-col justify-end items-start ">
             <img className="w-[140px] h-[38px] " src={lendsqrLogo} alt="" />
-          </div>{" "}
-        </div>{" "}
+          </div>{' '}
+        </div>{' '}
         <div className="w-[100%] h-[80%] flex flex-col justify-center items-center ">
           <div className="w-[90%] h-[337px] flex flex-col justify-center items-center ">
             <img className="w-[100%] h-[100%] " src={avaterImage} alt="" />
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+          </div>{' '}
+        </div>{' '}
+      </div>{' '}
       <div className="w-[48%] h-screen flex flex-col justify-center items-center ">
         <div className="w-[73%] h-[60%]  ">
           <div className="w-[100%] h-[30%] ">
             <p className="font-avenirNextBold text-[40px] font-[700] text-[#213F7D] leading-[55px] mb-[10px]  ">
               Welcome!
-            </p>{" "}
+            </p>{' '}
             <p className="text-[#545F7D] text-[20px] font-[400] leading-[27px] font-AvenirNextLight  ">
-              Enter details to login.{" "}
-            </p>{" "}
-          </div>{" "}
+              Enter details to login.{' '}
+            </p>{' '}
+          </div>{' '}
           <form className="w-[100%] h-[70%] mt-[60px] ">
             <input
               type="text"
@@ -57,8 +58,8 @@ function Login() {
             <div className="w-[100%] h-[50px] flex flex-col justify-center items-center ">
               <p className="text-[12px] font-[600] text-[#39CDCC] leading-[16px] AvenirNextRegular ">
                 FORGOT PASSWORD ?
-              </p>{" "}
-            </div>{" "}
+              </p>{' '}
+            </div>{' '}
             {buttonIsLoading ? (
               <Buttons
                 specificButtonTitle="Login"
@@ -70,7 +71,7 @@ function Login() {
                     color="white"
                     wrapperStyle={{}}
                     wrapperClass=""
-                    visible={true}
+                    visible
                     ariaLabel="oval-loading"
                     secondaryColor="#4fa94d"
                     strokeWidth={2}
@@ -85,10 +86,10 @@ function Login() {
                 specificButtonText="LOGIN"
                 specificButtonClick={handleLogin}
               />
-            )}
-          </form>{" "}
-        </div>{" "}
-      </div>{" "}
+            )}{' '}
+          </form>{' '}
+        </div>{' '}
+      </div>{' '}
     </div>
   );
 }

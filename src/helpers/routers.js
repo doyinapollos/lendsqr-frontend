@@ -1,9 +1,11 @@
-import React, { Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
-import { NonAuthRoutes, AuthRoutes } from "./url";
-import { ReactComponent as LoadingIcon } from "../assets/svg/loading-icon.svg";
-import Login from "../pages/Login";
-const Dashboard = React.lazy(() => import("../pages/Dashboard"));
+/* eslint-disable prettier/prettier */
+import React, { Suspense } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { NonAuthRoutes, AuthRoutes } from './url';
+import { ReactComponent as LoadingIcon } from '../assets/svg/loading-icon.svg';
+import Login from '../pages/Login';
+
+const Dashboard = React.lazy(() => import('../pages/Dashboard'));
 
 function Routers() {
   return (
@@ -16,10 +18,10 @@ function Routers() {
         }
       >
         <Routes>
-          <Route path={NonAuthRoutes.login} element={<Login />} />{" "}
-          <Route path={AuthRoutes.dashboard} element={<Dashboard />} />{" "}
-        </Routes>{" "}
-      </Suspense>{" "}
+          <Route path={NonAuthRoutes.login} element={<Login />} />{' '}
+          <Route path={AuthRoutes.dashboard} element={<Dashboard />} />{' '}
+        </Routes>{' '}
+      </Suspense>{' '}
     </div>
   );
 }
