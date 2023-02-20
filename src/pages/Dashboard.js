@@ -30,12 +30,14 @@ function Dashboard() {
     <div className="w-[100%] h-[1000px] bg-[] text-center flex flex-col justify-center items-center ">
       <div className="w-[100%] h-[8%] flex justify-center items-center bg-[#ffffff] ">
         <div className="w-[20%] h-[100%] flex flex-col justify-center items-start ">
-          <img
-            onClick={() => navigate(NonAuthRoutes.login)}
-            className="w-[138px] h-[36px] ml-[20px] "
-            src={lendsqrLogo}
-            alt=""
-          />
+          <button>
+            <img
+              onClick={() => navigate(NonAuthRoutes.login)}
+              className="w-[138px] h-[36px] ml-[20px] "
+              src={lendsqrLogo}
+              alt=""
+            />
+          </button>{' '}
         </div>{' '}
         <div className="w-[80%] h-[100%] flex flex-row justify-center items-center ">
           <div className="w-[60%] h-[100%] flex flex-col justify-center items-center ">
@@ -43,10 +45,17 @@ function Dashboard() {
               <input
                 type="text"
                 placeholder="Search for anything"
-                className="w-[400px] h-[38px] p-[10px] bg-white rounded-l-[5px] border-[1px] border-[#213F7D] "
+                className="w-[400px] h-[38px] p-[10px] bg-white rounded-l-[5px] border-[2px] border-[#FBFBFB] "
               />
               <div className="w-[56px] h-[38px] bg-[#39CDCC] flex flex-col justify-center items-center rounded-r-[5px] ">
-                <img className="w-[14px] h-[14px] " src={searchIcon} alt="" />
+                <button>
+                  {' '}
+                  <img
+                    className="w-[14px] h-[14px] "
+                    src={searchIcon}
+                    alt=""
+                  />{' '}
+                </button>{' '}
               </div>{' '}
             </div>{' '}
           </div>{' '}
@@ -66,14 +75,14 @@ function Dashboard() {
                 alt=""
               />
             </div>{' '}
-            <p className="mr-[4px]"> ebiapollos </p>{' '}
+            <p className="mr-[4px]"> Ebi - erefa </p>{' '}
             <div>
               <img className="w-[7px] h-[4px] " src={dropDownIcon} alt="" />
             </div>{' '}
           </div>{' '}
         </div>{' '}
       </div>{' '}
-      <div className="w-[100%] h-[92%] flex justify-center items-center ">
+      <div className="w-[100%] h-[92%] flex justify-center items-center text-[#545F7D] ">
         <div className="w-[20%] h-[100%] flex flex-col justify-center items-start font-workSans ">
           <div className="w-[100%] h-[45%] bg-[#ffffff] ml-[20px] ">
             <div className="flex justify-start items-center py-[20px] ">
@@ -301,7 +310,7 @@ function Dashboard() {
         <div className="w-[80%] h-[100%] flex flex-col justify-between items-center bg-[#FBFBFB] font-workSans">
           <div className="w-[95%] h-[28%] flex flex-col justify-between items-center ">
             <div className="w-[100%] h-[30%] flex flex-col justify-center items-center">
-              <div className="w-[90%] h-[100%] flex flex-col justify-center items-start font-[700]  ">
+              <div className="w-[90%] h-[100%] flex flex-col justify-center items-start font-workSans text-[24px] font-[500] text-[#213F7D]  ">
                 <p className=""> Users </p>{' '}
               </div>{' '}
             </div>{' '}
@@ -330,7 +339,7 @@ function Dashboard() {
                       alt=""
                     />
                     <p className="text-[12px] text-[#545F7D] font-[500] ">
-                      USERS{' '}
+                      ACTIVE USERS{' '}
                     </p>{' '}
                     <p className="text-[20px] font-[500] text-[#545F7D] ">
                       2, 453{' '}
@@ -345,10 +354,10 @@ function Dashboard() {
                       alt=""
                     />
                     <p className="text-[12px] text-[#545F7D] font-[500] ">
-                      USERS{' '}
+                      USERS WITH LOANS{' '}
                     </p>{' '}
                     <p className="text-[20px] font-[500] text-[#545F7D] ">
-                      2, 453{' '}
+                      12, 453{' '}
                     </p>{' '}
                   </div>{' '}
                 </div>{' '}
@@ -360,10 +369,10 @@ function Dashboard() {
                       alt=""
                     />
                     <p className="text-[12px] text-[#545F7D] font-[500] ">
-                      USERS{' '}
+                      USERS WITH SAVINGS{' '}
                     </p>{' '}
                     <p className="text-[20px] font-[500] text-[#545F7D] ">
-                      2, 453{' '}
+                      102, 453{' '}
                     </p>{' '}
                   </div>{' '}
                 </div>{' '}
@@ -407,7 +416,7 @@ function Dashboard() {
               <div className="w-[95%] h-[10%] flex justify-around items-center bg-[#ffffff] border-b-2 border-gray-200 ">
                 <p> Lendsqr </p> <p> Adedeji </p> <p> adedeji @lendsqr.com </p>{' '}
                 <p> 08078903721 </p> <p> May 15, 2020 10: 00 AM </p>{' '}
-                <button className="w-[65px] h-[20px] text-[12px] bg-[#dfe4df] rounded-[100px] ">
+                <button className="w-[65px] h-[20px] text-[12px] bg-[#fbfbfb] rounded-[100px] ">
                   Inactive{' '}
                 </button>{' '}
                 <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />
@@ -415,15 +424,7 @@ function Dashboard() {
               <div className="w-[95%] h-[10%] flex justify-around items-center bg-[#ffffff] border-b-2 border-gray-200 ">
                 <p> Lendsqr </p> <p> Adedeji </p> <p> adedeji @lendsqr.com </p>{' '}
                 <p> 08078903721 </p> <p> May 15, 2020 10: 00 AM </p>{' '}
-                <button className="w-[65px] h-[20px] text-[12px] bg-[#dfe5f5] rounded-[100px] ">
-                  Inactive{' '}
-                </button>{' '}
-                <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />
-              </div>{' '}
-              <div className="w-[95%] h-[10%] flex justify-around items-center bg-[#ffffff] border-b-2 border-gray-200 ">
-                <p> Lendsqr </p> <p> Adedeji </p> <p> adedeji @lendsqr.com </p>{' '}
-                <p> 08078903721 </p> <p> May 15, 2020 10: 00 AM </p>{' '}
-                <button className="w-[65px] h-[20px] text-[12px] bg-[#E9B200] rounded-[100px] text-[#E4033B] ">
+                <button className="w-[65px] h-[20px] text-[12px] bg-[#FDF7E5] rounded-[100px] text-[#c9d841] ">
                   Pending{' '}
                 </button>{' '}
                 <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />
@@ -431,7 +432,7 @@ function Dashboard() {
               <div className="w-[95%] h-[10%] flex justify-around items-center bg-[#ffffff] border-b-2 border-gray-200 ">
                 <p> Lendsqr </p> <p> Adedeji </p> <p> adedeji @lendsqr.com </p>{' '}
                 <p> 08078903721 </p> <p> May 15, 2020 10: 00 AM </p>{' '}
-                <button className="w-[65px] h-[20px] text-[12px] bg-[#ff4929] rounded-[100px] ">
+                <button className="w-[65px] h-[20px] text-[12px] bg-[#FCE6EB] rounded-[100px] text-[#F391A9] ">
                   Blacklisted{' '}
                 </button>{' '}
                 <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />
@@ -439,15 +440,7 @@ function Dashboard() {
               <div className="w-[95%] h-[10%] flex justify-around items-center bg-[#ffffff] border-b-2 border-gray-200 ">
                 <p> Lendsqr </p> <p> Adedeji </p> <p> adedeji @lendsqr.com </p>{' '}
                 <p> 08078903721 </p> <p> May 15, 2020 10: 00 AM </p>{' '}
-                <button className="w-[65px] h-[20px] text-[12px] bg-[#fccc47] rounded-[100px] ">
-                  Pending{' '}
-                </button>{' '}
-                <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />
-              </div>{' '}
-              <div className="w-[95%] h-[10%] flex justify-around items-center bg-[#ffffff] border-b-2 border-gray-200 ">
-                <p> Lendsqr </p> <p> Adedeji </p> <p> adedeji @lendsqr.com </p>{' '}
-                <p> 08078903721 </p> <p> May 15, 2020 10: 00 AM </p>{' '}
-                <button className="w-[65px] h-[20px] text-[12px] bg-[#2dfa50] rounded-[100px] ">
+                <button className="w-[65px] h-[20px] text-[12px] bg-[#F3FCF6] rounded-[100px] text-[#41e632] ">
                   Active{' '}
                 </button>{' '}
                 <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />
@@ -455,15 +448,31 @@ function Dashboard() {
               <div className="w-[95%] h-[10%] flex justify-around items-center bg-[#ffffff] border-b-2 border-gray-200 ">
                 <p> Lendsqr </p> <p> Adedeji </p> <p> adedeji @lendsqr.com </p>{' '}
                 <p> 08078903721 </p> <p> May 15, 2020 10: 00 AM </p>{' '}
-                <button className="w-[65px] h-[20px] text-[12px] bg-[#36fa24] rounded-[100px] ">
-                  active{' '}
+                <button className="w-[65px] h-[20px] text-[12px] bg-[#F3FCF6] rounded-[100px] text-[#41e632] ">
+                  Active{' '}
                 </button>{' '}
                 <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />
               </div>{' '}
               <div className="w-[95%] h-[10%] flex justify-around items-center bg-[#ffffff] border-b-2 border-gray-200 ">
                 <p> Lendsqr </p> <p> Adedeji </p> <p> adedeji @lendsqr.com </p>{' '}
                 <p> 08078903721 </p> <p> May 15, 2020 10: 00 AM </p>{' '}
-                <button className="w-[65px] h-[20px] text-[12px] bg-[#fd4e2f] rounded-[100px] ">
+                <button className="w-[65px] h-[20px] text-[12px] bg-[#FCE6EB] rounded-[100px] text-[#F391A9] ">
+                  Blacklisted{' '}
+                </button>{' '}
+                <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />
+              </div>{' '}
+              <div className="w-[95%] h-[10%] flex justify-around items-center bg-[#ffffff] border-b-2 border-gray-200 ">
+                <p> Lendsqr </p> <p> Adedeji </p> <p> adedeji @lendsqr.com </p>{' '}
+                <p> 08078903721 </p> <p> May 15, 2020 10: 00 AM </p>{' '}
+                <button className="w-[65px] h-[20px] text-[12px] bg-[#Fdf7e5] rounded-[100px] text-[#c9d841] ">
+                  Pending{' '}
+                </button>{' '}
+                <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />
+              </div>{' '}
+              <div className="w-[95%] h-[10%] flex justify-around items-center bg-[#ffffff] border-b-2 border-gray-200 ">
+                <p> Lendsqr </p> <p> Adedeji </p> <p> adedeji @lendsqr.com </p>{' '}
+                <p> 08078903721 </p> <p> May 15, 2020 10: 00 AM </p>{' '}
+                <button className="w-[65px] h-[20px] text-[12px] bg-[#FCE6EB] rounded-[100px] text-[#F391A9] ">
                   Blacklisted{' '}
                 </button>{' '}
                 <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />
@@ -471,7 +480,7 @@ function Dashboard() {
               <div className="w-[95%] h-[10%] flex justify-around items-center bg-[#ffffff] ">
                 <p> Lendsqr </p> <p> Adedeji </p> <p> adedeji @lendsqr.com </p>{' '}
                 <p> 08078903721 </p> <p> May 15, 2020 10: 00 AM </p>{' '}
-                <button className="w-[65px] h-[20px] text-[12px] bg-[#cedad1de] rounded-[100px] ">
+                <button className="w-[65px] h-[20px] text-[12px] bg-[#fbfbfb] rounded-[100px] ">
                   Inactive{' '}
                 </button>{' '}
                 <img className="w-[3px] h-[14px] " src={optionsIcon} alt="" />
